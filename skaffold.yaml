@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta5
+kind: Config
+metadata:
+  name: trivy-enforcer
+build:
+  artifacts:
+  - image: trivy-enforcer
+  local:
+    useBuildkit: true
+deploy:
+  kustomize:
+    paths:
+    - config/default

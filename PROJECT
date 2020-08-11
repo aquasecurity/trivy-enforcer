@@ -1,0 +1,7 @@
+domain: github.io
+repo: github.com/aquasecurity/trivy-enforcer
+resources:
+- group: aquasecurity
+  kind: ImageVulnerability
+  version: v1alpha1
+version: "2"
