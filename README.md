@@ -4,6 +4,12 @@
 
 Kubernetes Operator for Image Assurance
 
+It works as 
+- Admission Controller
+  - protecting unsafe images from being deployed
+- Custom Controller
+  - watching ImageVulnerability CRD and scanning the image in the custom resource automatically
+
 ## Setup
 
 ```
